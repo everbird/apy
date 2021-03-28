@@ -71,7 +71,7 @@ class Anki:
             click.echo('Path to database is not valid!')
             click.echo(f'path = {path}')
             raise click.Abort()
-        except anki.rsbackend.DBError:
+        except anki.errors.DBError:
             click.echo('Database is NA/locked!')
             raise click.Abort()
 

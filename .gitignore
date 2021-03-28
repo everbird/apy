@@ -4,3 +4,5 @@ apy.egg-info/
 .venv
 build/
 dist/
+*~
+*.swp
