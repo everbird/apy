@@ -529,7 +529,7 @@ def _get_imgs_from_html_latex(field_html, anki, model):
 
     Note: The returned paths are relative to the Anki media directory.
     """
-    proto = anki.col.backend.extract_latex(text=field_html,
+    proto = anki.col._backend.extract_latex(text=field_html,
                                            svg=model.get("latexsvg", False),
                                            expand_clozes=False)
     out = latex.ExtractedLatexOutput.from_proto(proto)
